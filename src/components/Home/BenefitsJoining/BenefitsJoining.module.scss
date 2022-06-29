@@ -1,0 +1,51 @@
+.BenefitsJoining {
+    background-color: #F5F2F0;
+    &__wrapper {
+        width: 1280px;
+        margin: 0 auto;
+    }
+    &__title {
+        padding-top: 90px;
+        margin: 0 auto;
+        width: 432px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 120px;
+        width: 1270px;
+        &_item {
+            position: relative;
+            margin-top: 64px;
+        }
+        &_itemImg {
+            img {
+                width: 280px;
+            }
+        }
+        &_itemTitle {
+            width: 238px;
+            position: absolute;
+            margin-bottom: 32px;
+            bottom: 8px;
+            left: 16px;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+}
