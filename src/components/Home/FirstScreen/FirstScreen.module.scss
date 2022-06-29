@@ -1,9 +1,12 @@
 .firstScreen {
     background-image: url('../../../resources/img/WomanLogo.jpg');
     height: 662px;
+    width: 100%;
+    margin: 0 auto;
+
     &__wrapper {
         width: 1230px;
-        margin: 0 auto;
+        margin-left: 70px;
     }
     &__text {
         padding-top: 128px;
