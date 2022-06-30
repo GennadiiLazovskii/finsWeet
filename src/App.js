@@ -5,6 +5,7 @@ import Relevant from './components/Home/Relevant/Relevant';
 import Compassion from './components/Home/Compassion/Compassion';
 import BenefitsJoining from './components/Home/BenefitsJoining/BenefitsJoining';
 import UpcomingEvent from './components/Home/UpcomingEvent/UpcomingEvent';
+import AroundWorld from './components/Home/AroundWorld/AroundWorld';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Compassion/>
       <BenefitsJoining/>
       <UpcomingEvent/>
+      <AroundWorld/>
       <Footer/>
     </>
     );
