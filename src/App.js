@@ -6,6 +6,7 @@ import Compassion from './components/Home/Compassion/Compassion';
 import BenefitsJoining from './components/Home/BenefitsJoining/BenefitsJoining';
 import UpcomingEvent from './components/Home/UpcomingEvent/UpcomingEvent';
 import AroundWorld from './components/Home/AroundWorld/AroundWorld';
+import WatchAndListen from './components/Home/WatchAndListen/WatchAndListen';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BenefitsJoining/>
       <UpcomingEvent/>
       <AroundWorld/>
+      <WatchAndListen/>
       <Footer/>
     </>
     );
