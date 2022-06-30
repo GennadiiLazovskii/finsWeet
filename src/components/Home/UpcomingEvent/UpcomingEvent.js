@@ -14,7 +14,20 @@ const UpcomingEvent = () => {
                 join us and become part of something great
                 </div>
             <div className={styles.UpcomingEvent__box}>
-                <div className={styles.UpcomingEvent__box_descr}></div>
+                <div className={styles.UpcomingEvent__box_descr}>
+                    <div className={styles.UpcomingEvent__box_descrEvent}>Upcoming Event</div>
+                    <div className={styles.UpcomingEvent__box_descrTitle}>WATCH AND LISTEN TO OUR SERMONS</div>
+                    <div className={styles.UpcomingEvent__box_descrText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                    <div className={styles.UpcomingEvent__box_descrClock}>
+                        <img src={Clock} alt="Clock" />
+                        <p>Friday 23:39 IST Saturday 11:20 ISD</p>
+                        <img src={Circle} alt="Circle" />
+                        <p>No 233 Main St. New York, United States</p>
+                    </div>
+                    <div className={styles.UpcomingEvent__box_descrBtn}>
+                        <button>Register</button>
+                    </div>
+                </div>
                 <div className={styles.UpcomingEvent__box_img}>
                     <img src={WomanMan} alt="WomanMan" />
                 </div>

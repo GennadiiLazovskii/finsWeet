@@ -22,9 +22,88 @@
         display: flex;
         margin-bottom: 48px;
         &_descr {
-            width: 435px;
-            height: 512px;
+            padding: 61px 0 0 89px;
+            width: 455px;
             background-color:#FFF5EB;
+        }
+        &_descrEvent {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+        }
+        &_descrTitle {
+            width: 210px;
+            margin-top: 16px;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #161722;
+        }
+        &_descrText {
+            width: 256px;
+            margin-top: 16px;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: #161722;
+            opacity: 0.78;
+        }
+        &_descrClock {
+            width: 220px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img {
+                margin-right: 16px;
+            }
+            p {
+                width: 184px;
+                margin-top: 32px;
+                font-family: 'Roboto Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #161722;
+            }
+        }
+        &_descrBtn {
+            button {
+                width: 191px;
+                height: 64px;
+                margin-top: 32px;
+                background: #161722;
+                backdrop-filter: blur(80px);
+                border-radius: 12px;
+                font-family: 'Roboto Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFD2A4;
+            }
+        }
+        &_img {
+            img {
+                height: 516px;
+            }
         }
     }
     &__link {
