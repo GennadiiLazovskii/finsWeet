@@ -1,6 +1,8 @@
 .aroundWorld {
     background-image: url('../../../resources/img/AroundWorld/ImgBg.jpg');
+    margin: 0 auto;
     height: 735px;
+    width: 1500px;
     &__wrapper {
         display: flex;
         align-items: center;

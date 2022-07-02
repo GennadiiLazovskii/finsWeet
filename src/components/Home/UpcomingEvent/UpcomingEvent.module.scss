@@ -1,6 +1,6 @@
-.UpcomingEvent {
+.upcomingEvent {
     &__wrapper {
-        width: 1280px;
+        width: 1230px;
         margin: 0 auto;
     }
     &__title {
@@ -18,8 +18,9 @@
         color: #161722;
     }
     &__box {
-        width: 1280px;
+        width: 1230px;
         display: flex;
+        margin-top: 64px;
         margin-bottom: 48px;
         &_descr {
             padding: 61px 0 0 89px;

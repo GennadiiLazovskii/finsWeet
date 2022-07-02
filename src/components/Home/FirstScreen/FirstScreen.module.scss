@@ -1,9 +1,7 @@
 .firstScreen {
     background-image: url('../../../resources/img/WomanLogo.jpg');
-    height: 662px;
-    width: 100%;
+    width: 1500px;
     margin: 0 auto;
-
     &__wrapper {
         width: 1230px;
         margin-left: 70px;
@@ -54,11 +52,10 @@
         display: flex;
         align-items: center;
         width: 326px;
+        padding-bottom: 95px;
         span {
             width: 18px;
             height: 0px;
-            right: 1354px;
-            top: 579px;
             border: 2px solid #FFD2A4;
             transform: rotate(-180deg);
             margin-right: 12px;
