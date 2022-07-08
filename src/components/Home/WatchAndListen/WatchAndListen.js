@@ -40,7 +40,7 @@ const WatchAndListen = () => {
                 <div className={styles.watchAndListen__title}>SHARE, INSPIRE, INNOVATE</div>
                 <div className={styles.watchAndListen__box}>
                     {watchAndListenBox.map((item, idx) => (
-                        <div className={styles.watchAndListen__box_item}>
+                        <div key={`watchAndListen item ${idx}`} className={styles.watchAndListen__box_item}>
                             <div className={styles.watchAndListen__box_itemRelation}>{item.itemRelation}</div>
                             <div className={styles.watchAndListen__box_itemTitle}>{item.itemTitle}</div>
                             <div className={styles.watchAndListen__box_itemTxt}>{item.itemTxt}</div>
