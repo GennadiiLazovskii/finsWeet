@@ -6,36 +6,42 @@ import Like from '../../../resources/img/relevantImg/icon(3).png';
 
 const Relevant = () => {
 
+    const descrCard = [
+        {
+            img: Palm,
+            photoDescr: 'Palm',
+            title: 'About us',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        },
+        {
+            img: Involved,
+            photoDescr: 'Involved',
+            title: 'Get involved',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        },
+        {
+            img: Like,
+            photoDescr: 'Like',
+            title: 'Giving back',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        },
+    ]
 
-    return(
+    return (
         <div className={style.relevant}>
             <div className={style.relevant__wrapper}>
                 <div className={style.relevant__title}>a church that's relevant</div>
                 <div className={style.relevant__boxWrap}>
-                    <div className={style.relevant__boxWrap_item}>
-                        <div className={style.relevant__boxWrap_itemIcons}>
-                            <img src={Palm} alt="Palm" />
+                    {descrCard.map((item, idx) => (
+                        <div key={`descrCard item ${idx}`} className={style.relevant__boxWrap_item}>
+                            <div className={style.relevant__boxWrap_itemIcons}>
+                                <img src={item.img} alt={item.photoDescr} />
+                            </div>
+                            <div className={style.relevant__boxWrap_itemTitle}>{item.title}</div>
+                            <div className={style.relevant__boxWrap_itemDescr}>{item.descr}</div>
+                            <span></span>
                         </div>
-                        <div className={style.relevant__boxWrap_itemTitle}>About us</div>
-                        <div className={style.relevant__boxWrap_itemDescr}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        <span></span>
-                    </div>
-                    <div className={style.relevant__boxWrap_item}>
-                        <div className={style.relevant__boxWrap_itemIcons}>
-                            <img src={Involved} alt="Involved" />
-                        </div>
-                        <div className={style.relevant__boxWrap_itemTitle}>Get involved</div>
-                        <div className={style.relevant__boxWrap_itemDescr}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        <span></span>
-                    </div>
-                    <div className={style.relevant__boxWrap_item}>
-                        <div className={style.relevant__boxWrap_itemIcons}>
-                            <img src={Like} alt="Like" />
-                        </div>
-                        <div className={style.relevant__boxWrap_itemTitle}>Giving back</div>
-                        <div className={style.relevant__boxWrap_itemDescr}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        <span></span>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
