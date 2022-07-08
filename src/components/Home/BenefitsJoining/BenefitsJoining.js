@@ -7,43 +7,44 @@ import Pict from '../../../resources/img/BenefitsJoining/icon4.png'
 
 const BenefitsJoining = () => {
 
+    const benefitsBoxItem = [
+        {
+            img: Woman,
+            descrImg: 'Woman',
+            title: 'WATCH AND LISTEN TO OUR SERMONS',
+        },
+        {
+            img: Book,
+            descrImg: 'Book',
+            title: 'WATCH AND LISTEN TO OUR SERMONS',
+        },
+        {
+            img: Man,
+            descrImg: 'Man',
+            title: 'WATCH AND LISTEN TO OUR SERMONS',
+        },
+        {
+            img: Pict,
+            descrImg: 'Pict',
+            title: 'WATCH AND LISTEN TO OUR SERMONS',
+        },
+    ]
+
     return (
         <div className={styles.BenefitsJoining}>
             <div className={styles.BenefitsJoining__wrapper}>
                 <div className={styles.BenefitsJoining__title}>THE benefits of joining our church</div>
                 <div className={styles.BenefitsJoining__box}>
-                    <div className={styles.BenefitsJoining__box_item}>
-                        <div className={styles.BenefitsJoining__box_itemImg}>
-                            <img src={Woman} alt="Woman" />
+                    {benefitsBoxItem.map((item, idx) => (
+                        <div className={styles.BenefitsJoining__box_item}>
+                            <div className={styles.BenefitsJoining__box_itemImg}>
+                                <img src={item.img} alt={item.descrImg} />
+                            </div>
+                            <div className={styles.BenefitsJoining__box_itemTitle}>
+                                {item.title}
+                            </div>
                         </div>
-                        <div className={styles.BenefitsJoining__box_itemTitle}>
-                        WATCH AND LISTEN TO OUR SERMONS
-                        </div>
-                    </div>
-                    <div className={styles.BenefitsJoining__box_item}>
-                        <div className={styles.BenefitsJoining__box_itemImg}>
-                            <img src={Book} alt="Book" />
-                        </div>
-                        <div className={styles.BenefitsJoining__box_itemTitle}>
-                        WATCH AND LISTEN TO OUR SERMONS
-                        </div>
-                    </div>
-                    <div className={styles.BenefitsJoining__box_item}>
-                        <div className={styles.BenefitsJoining__box_itemImg}>
-                            <img src={Man} alt="Man" />
-                        </div>
-                        <div className={styles.BenefitsJoining__box_itemTitle}>
-                        WATCH AND LISTEN TO OUR SERMONS
-                        </div>
-                    </div>
-                    <div className={styles.BenefitsJoining__box_item}>
-                        <div className={styles.BenefitsJoining__box_itemImg}>
-                            <img src={Pict} alt="Pict" />
-                        </div>
-                        <div className={styles.BenefitsJoining__box_itemTitle}>
-                        WATCH AND LISTEN TO OUR SERMONS
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
