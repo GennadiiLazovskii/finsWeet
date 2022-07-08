@@ -36,7 +36,7 @@ const BenefitsJoining = () => {
                 <div className={styles.BenefitsJoining__title}>THE benefits of joining our church</div>
                 <div className={styles.BenefitsJoining__box}>
                     {benefitsBoxItem.map((item, idx) => (
-                        <div className={styles.BenefitsJoining__box_item}>
+                        <div key={`benefitsBoxItem ${idx}`} className={styles.BenefitsJoining__box_item}>
                             <div className={styles.BenefitsJoining__box_itemImg}>
                                 <img src={item.img} alt={item.descrImg} />
                             </div>
