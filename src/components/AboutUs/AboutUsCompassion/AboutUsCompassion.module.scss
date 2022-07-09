@@ -1,0 +1,84 @@
+.aboutUsCompassion {
+    height: 1270px;
+
+    &__wrapper {
+        padding-top: 100px;
+        width: 1230px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+    }
+
+    &__descr {
+        width: 864px;
+        margin: 0 auto;
+        margin-top: 32px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #161722;
+        opacity: 0.78;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        width: 1230px;
+
+        &_btnImg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 48px;
+        }
+    }
+
+    &__footerDescrWrapper {
+        padding-top: 64px;
+        width: 770px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__footerBox {
+        width: 372px;
+    }
+
+    &__footerTitle {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 44px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+    }
+
+    &__footerText {
+        margin-top: 16px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161722;
+        opacity: 0.78;
+    }
+}
