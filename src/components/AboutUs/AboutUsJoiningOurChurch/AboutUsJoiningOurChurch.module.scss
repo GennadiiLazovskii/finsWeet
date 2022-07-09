@@ -1,0 +1,93 @@
+.aboutUsJoiningOurChurch {
+    width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 128px;
+
+    &__wrapper {
+        width: 1230px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &__title {
+        margin: 0 auto;
+        width: 432px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 37px;
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+    }
+
+    &__boxLeft {
+        width: 1025px;
+        margin: 0 auto;
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__boxLeftDescr {
+        width: 500px;
+        &_titleLeft {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #161722;
+        }
+
+        &_descrLeft {
+            margin-top: 16px;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161722;
+            opacity: 0.78;
+        }
+    }
+
+    &__boxRight {
+        width: 1025px;
+        margin: 0 auto;
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__boxRightDescr {
+        width: 500px;
+        &_titleRight {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #161722;
+        }
+
+        &_descrRight {
+            margin-top: 16px;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161722;
+            opacity: 0.78;
+        }
+    }
+}
