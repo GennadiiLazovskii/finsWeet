@@ -1,0 +1,71 @@
+.aboutUsInspirationalTeam {
+    width: 1500px;
+    height: 100%;
+    padding-bottom: 128px;
+    margin: 0 auto;
+    &__wrapper {
+        width: 1280px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 64px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__boxItem {
+        width: 302px;
+        height: 366px;
+        background-color: #F5F2F0;
+        border-radius: 12px;
+        &_avatar {
+            img {
+                display: block;
+                margin: 0 auto;
+                margin-top: 48px;
+            }
+        }
+        &_name {
+            margin-top: 24px;
+            margin-bottom: 8px;
+            text-align: center;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #161722;
+        }
+        &_jobPost {
+            text-align: center;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161722;
+            opacity: 0.7;
+        }
+        &_link {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            img {
+                margin: 0px 10px 0px 10px;
+            }
+        }
+
+    }
+}

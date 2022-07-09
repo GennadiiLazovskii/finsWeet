@@ -10,6 +10,7 @@ import AboutUsFirstScrin from './components/AboutUs/AboutUsFirstScrin/AboutUsFir
 import AboutUsCompassion from './components/AboutUs/AboutUsCompassion/AboutUsCompassion';
 import Footer from './components/Home/Footer/Footer';
 import AboutUsJoiningOurChurch from './components/AboutUs/AboutUsJoiningOurChurch/AboutUsJoiningOurChurch';
+import AboutUsInspirationalTeam from './components/AboutUs/AboutUsInspirationalTeam/AboutUsInspirationalTeam';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <AboutUsFirstScrin/>
       <AboutUsCompassion/>
       <AboutUsJoiningOurChurch/>
+      <AboutUsInspirationalTeam/>
       <Footer/>
     </>
     );
