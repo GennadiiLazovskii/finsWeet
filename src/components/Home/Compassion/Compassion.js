@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import styles from '../Compassion/Compassion.module.scss';
 import Man from '../../../resources/img/compassion/icon1.png';
 import WomanMan from '../../../resources/img/compassion/icon2.png';
@@ -39,7 +39,9 @@ const Compassion = () => {
                 </div>
                 <div className={styles.compassion__titleFooter}>celebrate WITH US</div>
                 <div className={styles.compassion__descrFooter}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                <div className={styles.compassion__linkFooter}>Read More</div>
+                <div className={styles.compassion__linkFooter}>
+                    <Link to='/AboutUs'>Read more</Link>
+                </div>
             </div>
         </div>
     );
