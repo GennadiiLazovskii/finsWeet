@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import logo from '../../../resources/img/VectorFooter.png';
-import Facebook from '../../../resources/img/social/Facebook.png';
-import Linkedln from '../../../resources/img/social/Linkedln.png';
-import Twitter from '../../../resources/img/social/Twitter.png';
+import logo from '../../resources/img/VectorFooter.png';
+import Facebook from '../../resources/img/social/Facebook.png';
+import Linkedln from '../../resources/img/social/Linkedln.png';
+import Twitter from '../../resources/img/social/Twitter.png';
 
 const Footer = () => {
 

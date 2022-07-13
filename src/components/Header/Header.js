@@ -1,5 +1,6 @@
 import React from "react";
-import logo from '../../../resources/img/Vector.png';
+import { NavLink } from "react-router-dom";
+import logo from '../../resources/img/Vector.png';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -11,15 +12,15 @@ const Header = () => {
         },
         {
             title: 'About us',
-            link: '/',
+            link: '/AboutUs',
         },
         {
             title: 'Sermon',
-            link: '/',
+            link: '/Sermon',
         },
         {
             title: 'Blog',
-            link: '/',
+            link: '/Blog',
         },
     ]
 
@@ -33,7 +34,7 @@ const Header = () => {
                     <ul>
                         {menu.map((item, idx) => (
                             <li key={`menu item ${idx}`}>
-                                <a href={item.link}>{item.title}</a>
+                                <NavLink exact activeStyle={{'color' : 'red'}} to={item.link}>{item.title}</NavLink>
                             </li>
                         ))}
                     </ul>
