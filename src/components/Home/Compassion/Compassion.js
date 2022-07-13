@@ -1,10 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from '../Compassion/Compassion.module.scss';
 import Man from '../../../resources/img/compassion/icon1.png';
 import WomanMan from '../../../resources/img/compassion/icon2.png';
 import Woman from '../../../resources/img/compassion/icon3.png';
 
 const Compassion = () => {
+
+    let navigate = useNavigate();
+
+    function handleClick() {
+        navigate("/AboutUs");
+    }
+
     return (
         <div className={styles.compassion}>
             <div className={styles.compassion__wrapper}>
@@ -22,7 +30,7 @@ const Compassion = () => {
                         <img src={Man} alt="Man" />
                     </div>
                     <div className={styles.compassion__box_btnImg}>
-                        <button>Read more</button>
+                        <button onClick={handleClick}>Read more</button>
                         <img src={WomanMan} alt="WomanMan" />
                     </div>
                     <div className={styles.compassion__box_imgWoman}>
