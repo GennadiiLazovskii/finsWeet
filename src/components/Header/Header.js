@@ -34,7 +34,11 @@ const Header = () => {
                     <ul>
                         {menu.map((item, idx) => (
                             <li key={`menu item ${idx}`}>
-                                <NavLink exact activeStyle={{'color' : 'red'}} to={item.link}>{item.title}</NavLink>
+                                <NavLink 
+                                end 
+                                activeStyle={{'color' : 'red'}} 
+                                style={({isActive}) => ({color: isActive ? '#FFD2A4' : 'white'})}
+                                to={item.link}>{item.title}</NavLink>
                             </li>
                         ))}
                     </ul>
