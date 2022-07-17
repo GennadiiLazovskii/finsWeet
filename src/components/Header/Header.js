@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../resources/img/Vector.png';
 import styles from './Header.module.scss';
 
@@ -28,7 +28,9 @@ const Header = () => {
         <div className={styles.header}> 
             <div className={styles.header__wrapper}>
                 <div className={styles.header__logo}>
-                    <img src={logo} alt="logo" />
+                    <Link to='/'>
+                        <img src={logo} alt="logo" />
+                    </Link>
                 </div>
                 <div className={styles.header__main}>
                     <ul>
