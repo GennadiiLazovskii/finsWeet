@@ -4,6 +4,7 @@ import logo from '../../resources/img/VectorFooter.png';
 import Facebook from '../../resources/img/social/Facebook.png';
 import Linkedln from '../../resources/img/social/Linkedln.png';
 import Twitter from '../../resources/img/social/Twitter.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -13,7 +14,9 @@ const Footer = () => {
             <div className={styles.footer__wrapper}>
                 <div className={styles.footer__contacts}>
                     <div className={styles.footer__contacts_logo}>
-                        <img src={logo} alt="logo" />
+                        <Link to='/'>
+                            <img src={logo} alt="logo" />
+                        </Link>
                     </div>
                     <div className={styles.footer__contacts_descr}>© Copyright Finsweet 2022</div>
                     <div className={styles.footer__contacts_text}>
@@ -24,10 +27,10 @@ const Footer = () => {
                 </div>
                 <div className={styles.footer__quicklinks}>
                     <div className={styles.footer__quicklinks_header}>Quicklinks</div>
-                    <p>About us</p>
-                    <p>Sermons</p>
-                    <p>Events</p>
-                    <p>Blog</p>
+                    <Link to='/'>About us</Link>
+                    <Link to='/AboutUs'>Sermons</Link>
+                    <Link to='/Sermon'>Events</Link>
+                    <Link to='/Blog'>Blog</Link>
                 </div>
                 <div className={styles.footer__connect}>
                     <div className={styles.footer__connect_header}>Connect </div>

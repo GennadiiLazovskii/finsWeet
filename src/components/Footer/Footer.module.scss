@@ -38,6 +38,8 @@
         }
     }
     &__quicklinks {
+        display: flex;
+        flex-direction: column;
         margin-right: 72px;
         &_header {
             font-family: 'Roboto Condensed';
@@ -48,7 +50,7 @@
             color: #FFFFFF;
             margin-bottom: 20px;
         }
-        p {
+        a {
             font-family: 'Roboto Condensed';
             font-style: normal;
             font-weight: 400;
@@ -58,6 +60,7 @@
             color: #FFFFFF;
             opacity: 0.78;
             margin-bottom: 24px;
+            text-decoration: none;
         }
     }
     &__connect {
