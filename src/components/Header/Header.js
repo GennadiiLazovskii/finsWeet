@@ -38,7 +38,7 @@ const Header = () => {
                             <li key={`menu item ${idx}`}>
                                 <NavLink 
                                 end 
-                                activeStyle={{'color' : 'red'}} 
+                                activestyle={{'color' : 'red'}} 
                                 style={({isActive}) => ({color: isActive ? '#FFD2A4' : 'white'})}
                                 to={item.link}>{item.title}</NavLink>
                             </li>
